@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Count {
+    rpc Next (NextRequest) returns (NextReply) {}   
+}
+
+message NextRequest {
+    string name = 1;
+}
+
+message NextReply {
+    int64 val = 1;
+}
